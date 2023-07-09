@@ -52,22 +52,13 @@ const last_posts = posts.slice(0, 3);
   />
 
   <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Medium</div>
   </div>
-
-  {
-    last_posts.map((post) => (
-      <>
-        <HorizontalCard
-          title={post.data.title}
-          img={post.data.heroImage}
-          desc={post.data.description}
-          url={"/blog/" + post.slug}
-          target="_self"
-          badge={post.data.badge}
-        />
-        <div class="divider my-0" />
-      </>
-    ))
-  }
+  <HorizontalCard
+    title="Crossec"
+    img="/proj_logo/crossec.webp"
+    desc="System for supporting plant tissue labroratory using Artificial Intelligence."
+    url="https://github.com/EarthWittawat/Crossec"
+    badge="2022"
+  />
 </BaseLayout>
